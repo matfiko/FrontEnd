@@ -1,0 +1,95 @@
+
+:root {
+    --space-3xs: clamp(0.25rem, calc(0.18rem + 0.37vw), 0.44rem);
+    --space-2xs: clamp(0.56rem, calc(0.44rem + 0.61vw), 0.88rem);
+    --space-xs: clamp(0.81rem, calc(0.62rem + 0.98vw), 1.31rem);
+    --space-s: clamp(1.06rem, calc(0.79rem + 1.34vw), 1.75rem);
+    --space-m: clamp(1.63rem, calc(1.23rem + 1.95vw), 2.63rem);
+    --space-l: clamp(2.13rem, calc(1.59rem + 2.68vw), 3.50rem);
+    --space-xl: clamp(3.19rem, calc(2.38rem + 4.02vw), 5.25rem);
+    --space-2xl: clamp(4.25rem, calc(3.18rem + 5.37vw), 7.00rem);
+    --space-3xl: clamp(6.38rem, calc(4.77rem + 8.05vw), 10.50rem);
+}
+body{
+    background-color:aliceblue;
+    font-family: arial;
+    margin:auto;
+    padding:50px;
+}
+.box{
+    background-color: white;
+    box-shadow: 0 0 25px grey;
+    width: min(60%, 1200px);
+    margin-inline: auto;
+
+}
+                                                /* Sekcja Header */
+header, main{
+    padding: 10px 40px 10px 40px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+header > img {
+    height: 200px;
+    width:200px;
+    box-shadow: 0 0 25px black;
+    padding:0;
+    border-radius: 50%;
+}
+.addressIcon{
+    width:16px;
+    height:16px;
+    background-color:black;
+    margin:10px;
+    padding:5px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+header h1{
+    font-size:--space-3xl;
+}
+header h3{
+    color:lightskyblue;
+}
+#headerName{
+    margin-left: 20px;
+}
+
+                                                /* Sekcja Main */
+section{
+    padding:10px 70px 10px 70px;
+    margin:20px 0px;
+}
+.mainSections h2{
+    font-size:--space-xl;
+    margin-top: 0;
+}
+.mainSections p {
+    margin:15px;
+    font-size:--space-xl;
+}
+a{
+    margin:auto;
+    font-size:--space-xl;
+}
+.uList{
+    list-style: square inside;
+    margin-left: 10px;
+    font-size: 19px;
+}
+.mainSections img{
+    margin:10px;
+    padding:5px;
+    vertical-align: middle;
+}
+
